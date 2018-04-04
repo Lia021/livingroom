@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
-  <script src="https://sdk.altvr.com/libs/altspace.js/2.8.1/altspace.min.js"></script>
+  <script src="https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script>
   <script>
     altspace.getThreeJSTrackingSkeleton().then(function (skeleton) {
           window.head = skeleton.getJoint('Head');
@@ -27,15 +27,33 @@
         
  <a-assets>
      
+    <a-asset-item id="wallandceling" src="https://rawgit.com/Lia021/livingroom/master/wall%20and%20celling/wall%20and%20celling.dae"></a-asset-item>
+    <a-asset-item id="floor" src="https://rawgit.com/Lia021/livingroom/master/wall%20and%20celling/wall%20floor.dae"></a-asset-item>
+    <a-asset-item id="balcony" src="https://rawgit.com/Lia021/livingroom/master/wall%20and%20celling/backony.dae"></a-asset-item>
     <a-asset-item id="?" src="?"></a-asset-item>
+    
+
+
     
  </a-assets>
       
       
- <!--?-->
+ <!--wallandceling-->
      
- <a-entity position="0 0 0" scale="9 9 9"  collada-model="#?"n-mesh-collider="type: environment; convex: false"></a-entity>
+ <a-entity position="0 0 0" scale="3 3 3"  collada-model="#wallandceling"n-mesh-collider="type: environment; convex: false"></a-entity>
 
+ <!--floor-->
+
+ <a-entity position="0 0 0" scale="3.05 3 3.05"  collada-model="#floor"n-mesh-collider="type: environment; convex: false"></a-entity>
+ 
+ <!--balcony-->
+     
+ <a-entity position="-0.15 0 -3.64" scale="1.50 1.35 1.50" rotation="0 90 0"  collada-model="#balcony"n-mesh-collider="type: environment; convex: false"></a-entity>
+
+ <!--couch-->
+     
+ <a-entity position="0 0 0" scale="1.50 1.35 1.50" rotation="0 0 0"  collada-model="#?"n-mesh-collider="type: environment; convex: false"></a-entity>
+ 
 
 
 

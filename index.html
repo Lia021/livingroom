@@ -30,6 +30,7 @@
     <a-asset-item id="wallandceling" src="https://rawgit.com/Lia021/livingroom/master/fae%20house/house2.dae"></a-asset-item>
     <a-asset-item id="lawn" src="https://rawgit.com/Lia021/livingroom/master/fae%20house/lawm2.dae"></a-asset-item>
     <a-asset-item id="table" src="https://rawgit.com/Lia021/livingroom/master/fae%20house/table.dae"></a-asset-item>
+    <a-asset-item id="indoortable" src="https://rawgit.com/Lia021/livingroom/master/fae%20house/fae%20table.dae"></a-asset-item>
    
    
    
@@ -51,6 +52,11 @@
 
  <a-entity position="-7 0 5" scale="3 3 3"  collada-model="#table"n-mesh-collider="type: environment; convex: false"></a-entity>
  
+ <!--indoortable-->
+
+ <a-entity position="1 0 -4" scale="4 7.30 5"rotation="0 90 0"  collada-model="#indoortable"n-mesh-collider="type: environment; convex: false"></a-entity>
+ 
+
  <!-- Basic circle. -->
  <a-circle color="#42d9f4"position="-7 1.12 5"opacity="0.3" radius="0.98"rotation="-90 0 0"n-mesh-collider="type: environment; convex: false"></a-circle>
 
@@ -96,3 +102,23 @@
  </a-entity>
 
 
+ <!--spawnintractable-pizza-->
+
+ <a-entity n-spawner='res: interactables/pizza-slice'rotation="0 180 0"position="1.90 1.17 -4"></a-entity>
+
+ <!--spawnintractable-cocanut-->
+
+ <a-entity n-spawner='res: interactables/can-soda-coconut'rotation="0 180 0"position="1 1.17 -4"></a-entity>
+
+ <!--spawnintractable-melon-->
+
+<a-entity n-spawner='res: interactables/can-soda-melon'rotation="0 180 0"position="0.50 1.17 -4"></a-entity>
+
+
+ <!--pizzabox-->
+
+ <a-entity n-object='res: objects/pizza-box'rotation="0 180 0"position="1.90 1.17 -4"></a-entity>
+
+ <!--pizzabox-->
+
+ <a-entity n-object='res: objects/penguin-standing'rotation="0 180 0"position="0 1.17 -4"></a-entity>

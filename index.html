@@ -31,7 +31,8 @@
     <a-asset-item id="lawn" src="https://rawgit.com/Lia021/livingroom/master/fae%20house/lawm2.dae"></a-asset-item>
     <a-asset-item id="table" src="https://rawgit.com/Lia021/livingroom/master/fae%20house/table.dae"></a-asset-item>
     <a-asset-item id="indoortable" src="https://rawgit.com/Lia021/livingroom/master/fae%20house/fae%20table.dae"></a-asset-item>
-   
+    <a-asset-item id="fountain" src="https://rawgit.com/Lia021/livingroom/master/fae%20house/fountatin.dae"></a-asset-item>
+    <a-asset-item id="carlos" src="https://rawgit.com/Lia021/helloween/master/carlos%20head/carlos-head.dae"></a-asset-item>
    
    
 
@@ -56,6 +57,26 @@
 
  <a-entity position="1 0 -4" scale="4 7.30 5"rotation="0 90 0"  collada-model="#indoortable"n-mesh-collider="type: environment; convex: false"></a-entity>
  
+   <!--carloshead-->
+     
+   <a-entity position="15 1.60 0" scale="3 3 3" rotation="0 190 0" collada-model="#carlos"n-mesh-collider="type: environment; convex: false"></a-entity>
+
+ <!--fountain-->
+
+ <a-entity position="15 -0.10 0" scale="5 6 5"rotation="0 90 0"  collada-model="#fountain"n-mesh-collider="type: environment; convex: false"></a-entity>
+
+  <!-- Textured plane parallel to ground. -->
+
+  <a-plane altspace-cursor-collider="enabled: false"src="https://rawgit.com/Lia021/livingroom/master/fae%20house/f3a9f122d84a040151d72c82495db0dd--texture-mapping-seamless-textures.jpg" repeat="10 10"position="15 -0.05 0"height="8" width="18" rotation="-90 0 0"></a-plane>
+
+ <!-- Basic circle2 -->
+ <a-circle altspace-cursor-collider="enabled: false"src="https://rawgit.com/Lia021/livingroom/master/fae%20house/Tileable%20classic%20water%20texture.jpg"position="15 0.30 0"opacity="0.3" radius="2.63"rotation="-90 0 0"></a-circle>
+
+ <!-- Basic circle3 -->
+ <a-circle altspace-cursor-collider="enabled: false"src="https://rawgit.com/Lia021/livingroom/master/fae%20house/Tileable%20classic%20water%20texture.jpg"position="15 1.10 0"opacity="0.3" radius="0.70"rotation="-90 0 0"></a-circle>
+
+  <!-- Basic circle4 -->
+  <a-circle altspace-cursor-collider="enabled: false" src="https://rawgit.com/Lia021/livingroom/master/fae%20house/Tileable%20classic%20water%20texture.jpg"position="15 1.68 0"opacity="0.3" radius="0.30"rotation="-90 0 0"></a-circle>
 
  <!-- Basic circle. -->
  <a-circle color="#42d9f4"position="-7 1.12 5"opacity="0.3" radius="0.98"rotation="-90 0 0"n-mesh-collider="type: environment; convex: false"></a-circle>
